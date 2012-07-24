@@ -6,14 +6,14 @@ scalaVersion := "2.9.1"
 
 seq(com.github.retronym.SbtOneJar.oneJarSettings: _*)
 
+// Novus repo is no longer necessary since we are now hosting at OSS Sonatype
 resolvers ++= Seq(
   "Typesafe"       at "http://repo.typesafe.com/typesafe/releases/",
   "Typesafe Snaps" at "http://repo.typesafe.com/typesafe/snapshots/",
   "Spray"          at "http://repo.spray.cc/",
   "releases"       at "http://scala-tools.org/repo-releases",
   "Scalate"        at "http://repo.fusesource.com/nexus/content/repositories/public",
-  "releases"       at "http://oss.sonatype.org/content/repositories/releases",
-  "Novus"          at "http://repo.novus.com/releases/"
+  "releases"       at "http://oss.sonatype.org/content/repositories/releases"
 )
 
 
